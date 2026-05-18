@@ -1,4 +1,0 @@
-{"ts":"2026-05-08","action":"learn","id":"LRN-20260508-001","category":"correction","summary":"gpt-image-2 must use generate.py via source ~/.zshrc and Images API, not /v1/chat/completions"}
-{"ts":"2026-05-08","action":"learn","id":"LRN-20260508-002","category":"best_practice","summary":"Explicitly pass --model gpt-image-2 to generate.py because env default may resolve to unavailable gpt-image-2-4k"}
-{"ts":"2026-05-08","action":"error","id":"ERR-20260508-001","category":"tools","summary":"Figure Images API returned usage_limit_reached (HTTP 429) while starting FeatureCards icon batch"}
-{"ts":"2026-05-09","action":"learn","id":"LRN-20260509-001","category":"correction","summary":"When a user identifies an iOS 26 bottom bar as a native component, verify against Apple HIG and prefer standard TabView/tabItem over custom overlay tab bars"}
