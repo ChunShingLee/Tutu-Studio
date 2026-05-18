@@ -1,0 +1,27 @@
+[     856ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/9219-b3353cabc57e7fb7.js:0
+[     867ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[     868ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[     869ms] [LOG] VersionChecker: Build ID changed from null to EbtOVJu2JzcrKeMJY8eLn, clear newtab cache @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[     875ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[     875ms] [LOG] deviceInfo.language undefined @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[     875ms] [LOG] 语言已从客户端接口更新: zh 当前页面语言: en @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1108ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1112ms] [ERROR] [TIM] get switch configs failed @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1112ms] [ERROR] [TIM] get switch configs failed @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1112ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1112ms] [WARNING] [TIM] get switch configs failed @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1675ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/9219-b3353cabc57e7fb7.js:0
+[    1677ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1678ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1680ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1680ms] [LOG] deviceInfo.language undefined @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1680ms] [LOG] 语言已正确设置，无需更新。existingLocale: zh locale: zh currentPageLocale: zh @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1901ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1904ms] [ERROR] [TIM] get switch configs failed @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1904ms] [ERROR] [TIM] get switch configs failed @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1904ms] [WARNING] testStatus chrome.tabInstance API is not available. This API may not be fully implemented yet. @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    1904ms] [WARNING] [TIM] get switch configs failed @ https://cdn.tabbitbrowser.com/web-prod/_next/static/chunks/6065-7ee93ada48d185a1.js:4
+[    7777ms] [WARNING] The resource https://cdn.tabbitbrowser.com/web-prod/_next/static/media/569ce4b8f30dc480-s.p.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://web.tabbitbrowser.com/share/chat/WNRnDaB69Y4z:0
+[    7778ms] [WARNING] The resource https://cdn.tabbitbrowser.com/web-prod/_next/static/media/93f479601ee12b01-s.p.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://web.tabbitbrowser.com/share/chat/WNRnDaB69Y4z:0
+[   10848ms] [WARNING] The resource https://cdn.tabbitbrowser.com/web-prod/_next/static/media/569ce4b8f30dc480-s.p.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://web.tabbitbrowser.com/share/chat/WNRnDaB69Y4z:0
+[   10848ms] [WARNING] The resource https://cdn.tabbitbrowser.com/web-prod/_next/static/media/93f479601ee12b01-s.p.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://web.tabbitbrowser.com/share/chat/WNRnDaB69Y4z:0

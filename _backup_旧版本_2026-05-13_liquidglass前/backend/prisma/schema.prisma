@@ -1,0 +1,287 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum PlanCode {
+  FREE
+  CREATOR
+  BUSINESS
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+}
+
+enum AdminRole {
+  ADMIN
+  OPERATOR
+}
+
+enum AdminStatus {
+  ACTIVE
+  DISABLED
+}
+
+enum TemplateStatus {
+  DRAFT
+  IN_REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+enum JobStatus {
+  QUEUED
+  RUNNING
+  SUCCEEDED
+  FAILED
+  CANCELED
+}
+
+enum JobMode {
+  TEXT_TO_IMAGE
+  IMAGE_TO_IMAGE
+  LOCAL_EDIT
+}
+
+enum SubscriptionStatus {
+  TRIALING
+  ACTIVE
+  PAUSED
+  CANCELED
+  EXPIRED
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+  CANCELED
+}
+
+enum ContentEntityType {
+  TEMPLATE
+  ASSET
+  COMMUNITY_POST
+}
+
+enum ContentReviewStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  CHANGES_REQUESTED
+}
+
+model User {
+  id               String          @id @default(cuid())
+  email            String          @unique
+  passwordHash     String?
+  nickname         String
+  planCode         PlanCode        @default(FREE)
+  quotaRemaining   Int             @default(5)
+  status           UserStatus      @default(ACTIVE)
+  jobs             GenerationJob[]
+  assets           Asset[]
+  subscriptions    Subscription[]
+  paymentOrders    PaymentOrder[]
+  communityPosts   CommunityPost[]
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+}
+
+model AdminUser {
+  id                String           @id @default(cuid())
+  email             String           @unique
+  passwordHash      String
+  nickname          String
+  role              AdminRole
+  permissions       String[]         @default([])
+  status            AdminStatus      @default(ACTIVE)
+  lastLoginAt       DateTime?
+  createdTemplates  Template[]       @relation("TemplateCreator")
+  updatedTemplates  Template[]       @relation("TemplateUpdater")
+  auditLogs         AuditLog[]       @relation("AuditActor")
+  contentReviews    ContentReview[]  @relation("ContentReviewer")
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+}
+
+model TemplateCategory {
+  id        String     @id
+  name      String
+  sortOrder Int        @default(0)
+  templates Template[]
+}
+
+model Template {
+  id               String              @id @default(cuid())
+  title            String
+  scene            String
+  promptHint       String
+  isPremium        Boolean             @default(false)
+  status           TemplateStatus      @default(PUBLISHED)
+  tags             String[]            @default([])
+  categoryId       String
+  category         TemplateCategory    @relation(fields: [categoryId], references: [id])
+  createdByAdminId String?
+  updatedByAdminId String?
+  createdByAdmin   AdminUser?          @relation("TemplateCreator", fields: [createdByAdminId], references: [id])
+  updatedByAdmin   AdminUser?          @relation("TemplateUpdater", fields: [updatedByAdminId], references: [id])
+  jobs             GenerationJob[]
+  reviews          ContentReview[]     @relation("TemplateReview")
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+}
+
+model GenerationJob {
+  id                String      @id @default(cuid())
+  userId            String
+  user              User        @relation(fields: [userId], references: [id])
+  templateId        String?
+  template          Template?   @relation(fields: [templateId], references: [id])
+  prompt            String
+  enhancedPrompt    String?
+  style             String
+  aspectRatio       String
+  status            JobStatus   @default(QUEUED)
+  provider          String
+  providerJobId     String?
+  imageUrl          String?
+  errorMessage      String?
+  mode              JobMode     @default(TEXT_TO_IMAGE)
+  referenceImageUrl String?
+  editInstruction   String?
+  editArea          String?
+  editStrength      String?
+  asset             Asset?
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+  startedAt         DateTime?
+  completedAt       DateTime?
+}
+
+model Asset {
+  id               String               @id @default(cuid())
+  userId           String
+  user             User                 @relation(fields: [userId], references: [id])
+  jobId            String?              @unique
+  job              GenerationJob?       @relation(fields: [jobId], references: [id])
+  title            String
+  imageUrl         String
+  prompt           String
+  tags             String[]             @default([])
+  sourceImageUrl   String?
+  mode             JobMode              @default(TEXT_TO_IMAGE)
+  reviewStatus     ContentReviewStatus  @default(PENDING)
+  reviewNotes      String?
+  reviews          ContentReview[]      @relation("AssetReview")
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+}
+
+model CommunityPost {
+  id           String               @id @default(cuid())
+  userId       String
+  user         User                 @relation(fields: [userId], references: [id])
+  title        String
+  body         String
+  imageUrl     String?
+  reviewStatus ContentReviewStatus  @default(PENDING)
+  reviewNotes  String?
+  reviews      ContentReview[]      @relation("CommunityPostReview")
+  createdAt    DateTime             @default(now())
+  updatedAt    DateTime             @updatedAt
+}
+
+model SubscriptionPlan {
+  id            String          @id @default(cuid())
+  code          String          @unique
+  name          String
+  priceCents    Int
+  quotaDaily    Int
+  active        Boolean         @default(true)
+  features      Json
+  sortOrder     Int             @default(0)
+  subscriptions Subscription[]
+  paymentOrders PaymentOrder[]
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+}
+
+model Subscription {
+  id         String              @id @default(cuid())
+  userId     String
+  user       User                @relation(fields: [userId], references: [id])
+  planId     String
+  plan       SubscriptionPlan    @relation(fields: [planId], references: [id])
+  status     SubscriptionStatus  @default(ACTIVE)
+  startAt    DateTime
+  endAt      DateTime?
+  renewalAt  DateTime?
+  autoRenew  Boolean             @default(false)
+  createdAt  DateTime            @default(now())
+  updatedAt  DateTime            @updatedAt
+}
+
+model PaymentOrder {
+  id         String          @id @default(cuid())
+  orderNo    String          @unique
+  userId     String
+  user       User            @relation(fields: [userId], references: [id])
+  planId     String?
+  plan       SubscriptionPlan? @relation(fields: [planId], references: [id])
+  amountCents Int
+  currency   String          @default("CNY")
+  status     OrderStatus     @default(PENDING)
+  channel    String?
+  paidAt     DateTime?
+  metadata   Json?
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+}
+
+model ContentReview {
+  id               String               @id @default(cuid())
+  entityType       ContentEntityType
+  entityId         String
+  status           ContentReviewStatus  @default(PENDING)
+  summary          String?
+  reviewerAdminId  String?
+  reviewerAdmin    AdminUser?           @relation("ContentReviewer", fields: [reviewerAdminId], references: [id])
+  templateId       String?
+  template         Template?            @relation("TemplateReview", fields: [templateId], references: [id])
+  assetId          String?
+  asset            Asset?               @relation("AssetReview", fields: [assetId], references: [id])
+  communityPostId  String?
+  communityPost    CommunityPost?       @relation("CommunityPostReview", fields: [communityPostId], references: [id])
+  metadata         Json?
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+
+  @@index([entityType, entityId, createdAt])
+}
+
+model SystemSetting {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+model AuditLog {
+  id           String     @id @default(cuid())
+  actorAdminId String?
+  actorAdmin   AdminUser? @relation("AuditActor", fields: [actorAdminId], references: [id])
+  action       String
+  entity       String
+  entityId     String?
+  metadata     Json?
+  createdAt    DateTime   @default(now())
+
+  @@index([entity, createdAt])
+}

@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2000010000000000000001 /* TuTuVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000010000000000000001 /* TuTuVisionApp.swift */; };
+		1A2000020000000000000002 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000020000000000000002 /* Models.swift */; };
+		1A2000030000000000000003 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000030000000000000003 /* APIClient.swift */; };
+		1A2000040000000000000004 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000040000000000000004 /* AppSession.swift */; };
+		1A2000050000000000000005 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000050000000000000005 /* DesignSystem.swift */; };
+		1A2000060000000000000006 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000060000000000000006 /* RootView.swift */; };
+		1A2000070000000000000007 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000070000000000000007 /* HomeView.swift */; };
+		1A2000080000000000000008 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000080000000000000008 /* CreateView.swift */; };
+		1A2000090000000000000009 /* TemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000090000000000000009 /* TemplatesView.swift */; };
+		1A2000100000000000000010 /* AssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000100000000000000010 /* AssetsView.swift */; };
+		1A2000110000000000000011 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000110000000000000011 /* ProfileView.swift */; };
+		1A2000120000000000000012 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000130000000000000013 /* CommunityView.swift */; };
+		1A2000130000000000000013 /* Resources/Generated in Resources */ = {isa = PBXBuildFile; fileRef = 1A1000140000000000000014 /* Resources/Generated */; };
+		1A2000140000000000000014 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000150000000000000015 /* SearchView.swift */; };
+		1A2000150000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1000160000000000000016 /* Assets.xcassets */; };
+		1A2000160000000000000016 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000170000000000000017 /* DesignTokens.swift */; };
+		1A2000170000000000000017 /* AvatarBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000180000000000000018 /* AvatarBadgeButton.swift */; };
+		1A2000180000000000000018 /* BannerCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000190000000000000019 /* BannerCarousel.swift */; };
+		1A2000190000000000000019 /* SkeletonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000200000000000000020 /* SkeletonLoader.swift */; };
+		1A2000200000000000000020 /* GenerationTaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1000210000000000000021 /* GenerationTaskStore.swift */; };
+		9BE171EE2FB2B87E009D4F0C /* LiquidGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE171ED2FB2B87D009D4F0C /* LiquidGlass.swift */; };
+		9BE171F02FB2B87F009D4F0C /* AppPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE171EF2FB2B87F009D4F0C /* AppPageHeader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0000070000000000000007 /* TuTuVisionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuTuVisionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1000010000000000000001 /* TuTuVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuTuVisionApp.swift; sourceTree = "<group>"; };
+		1A1000020000000000000002 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1A1000030000000000000003 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1A1000040000000000000004 /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
+		1A1000050000000000000005 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		1A1000060000000000000006 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1A1000070000000000000007 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1A1000080000000000000008 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		1A1000090000000000000009 /* TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesView.swift; sourceTree = "<group>"; };
+		1A1000100000000000000010 /* AssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsView.swift; sourceTree = "<group>"; };
+		1A1000110000000000000011 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1A1000120000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1000130000000000000013 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		1A1000140000000000000014 /* Resources/Generated */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/Generated; sourceTree = "<group>"; };
+		1A1000150000000000000015 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1A1000160000000000000016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A1000170000000000000017 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		1A1000180000000000000018 /* AvatarBadgeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarBadgeButton.swift; sourceTree = "<group>"; };
+		1A1000190000000000000019 /* BannerCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCarousel.swift; sourceTree = "<group>"; };
+		1A1000200000000000000020 /* SkeletonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoader.swift; sourceTree = "<group>"; };
+		1A1000210000000000000021 /* GenerationTaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationTaskStore.swift; sourceTree = "<group>"; };
+		9BE171ED2FB2B87D009D4F0C /* LiquidGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlass.swift; sourceTree = "<group>"; };
+		9BE171EF2FB2B87F009D4F0C /* AppPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPageHeader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000090000000000000009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0000040000000000000004 = {
+			isa = PBXGroup;
+			children = (
+				1A0000060000000000000006 /* TuTuVisionApp */,
+				1A0000050000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0000050000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000070000000000000007 /* TuTuVisionApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0000060000000000000006 /* TuTuVisionApp */ = {
+			isa = PBXGroup;
+			children = (
+				1A1000010000000000000001 /* TuTuVisionApp.swift */,
+				1A1000020000000000000002 /* Models.swift */,
+				1A1000030000000000000003 /* APIClient.swift */,
+				1A1000040000000000000004 /* AppSession.swift */,
+				1A3000010000000000000001 /* Theme */,
+				1A3000020000000000000002 /* Components */,
+				1A3000030000000000000003 /* Stores */,
+				1A1000050000000000000005 /* DesignSystem.swift */,
+				1A1000060000000000000006 /* RootView.swift */,
+				1A1000130000000000000013 /* CommunityView.swift */,
+				1A1000070000000000000007 /* HomeView.swift */,
+				1A1000080000000000000008 /* CreateView.swift */,
+				1A1000090000000000000009 /* TemplatesView.swift */,
+				1A1000100000000000000010 /* AssetsView.swift */,
+				1A1000110000000000000011 /* ProfileView.swift */,
+				1A1000150000000000000015 /* SearchView.swift */,
+				1A1000160000000000000016 /* Assets.xcassets */,
+				1A1000120000000000000012 /* Info.plist */,
+				1A1000140000000000000014 /* Resources/Generated */,
+			);
+			path = TuTuVisionApp;
+			sourceTree = "<group>";
+		};
+		1A3000010000000000000001 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				1A1000170000000000000017 /* DesignTokens.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		1A3000020000000000000002 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1A1000180000000000000018 /* AvatarBadgeButton.swift */,
+				1A1000190000000000000019 /* BannerCarousel.swift */,
+				1A1000200000000000000020 /* SkeletonLoader.swift */,
+				9BE171ED2FB2B87D009D4F0C /* LiquidGlass.swift */,
+				9BE171EF2FB2B87F009D4F0C /* AppPageHeader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1A3000030000000000000003 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				1A1000210000000000000021 /* GenerationTaskStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0000020000000000000002 /* TuTuVisionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000110000000000000011 /* Build configuration list for PBXNativeTarget "TuTuVisionApp" */;
+			buildPhases = (
+				1A0000080000000000000008 /* Sources */,
+				1A0000090000000000000009 /* Frameworks */,
+				1A0000100000000000000010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuTuVisionApp;
+			productName = TuTuVisionApp;
+			productReference = 1A0000070000000000000007 /* TuTuVisionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					1A0000020000000000000002 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000030000000000000003 /* Build configuration list for PBXProject "TuTuVisionApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A0000040000000000000004;
+			productRefGroup = 1A0000050000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0000020000000000000002 /* TuTuVisionApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000100000000000000010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2000150000000000000015 /* Assets.xcassets in Resources */,
+				1A2000130000000000000013 /* Resources/Generated in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0000080000000000000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2000010000000000000001 /* TuTuVisionApp.swift in Sources */,
+				1A2000020000000000000002 /* Models.swift in Sources */,
+				1A2000030000000000000003 /* APIClient.swift in Sources */,
+				1A2000040000000000000004 /* AppSession.swift in Sources */,
+				1A2000160000000000000016 /* DesignTokens.swift in Sources */,
+				1A2000050000000000000005 /* DesignSystem.swift in Sources */,
+				1A2000060000000000000006 /* RootView.swift in Sources */,
+				1A2000170000000000000017 /* AvatarBadgeButton.swift in Sources */,
+				1A2000180000000000000018 /* BannerCarousel.swift in Sources */,
+				9BE171EE2FB2B87E009D4F0C /* LiquidGlass.swift in Sources */,
+				9BE171F02FB2B87F009D4F0C /* AppPageHeader.swift in Sources */,
+				1A2000120000000000000012 /* CommunityView.swift in Sources */,
+				1A2000070000000000000007 /* HomeView.swift in Sources */,
+				1A2000080000000000000008 /* CreateView.swift in Sources */,
+				1A2000190000000000000019 /* SkeletonLoader.swift in Sources */,
+				1A2000090000000000000009 /* TemplatesView.swift in Sources */,
+				1A2000100000000000000010 /* AssetsView.swift in Sources */,
+				1A2000110000000000000011 /* ProfileView.swift in Sources */,
+				1A2000140000000000000014 /* SearchView.swift in Sources */,
+				1A2000200000000000000020 /* GenerationTaskStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000120000000000000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEVELOPMENT_LANGUAGE = en;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0000130000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEVELOPMENT_LANGUAGE = en;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		1A0000140000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S56Q83W95P;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TuTuVisionApp/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutuvision.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A0000150000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S56Q83W95P;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TuTuVisionApp/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutuvision.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0000030000000000000003 /* Build configuration list for PBXProject "TuTuVisionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000120000000000000012 /* Debug */,
+				1A0000130000000000000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000110000000000000011 /* Build configuration list for PBXNativeTarget "TuTuVisionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000140000000000000014 /* Debug */,
+				1A0000150000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0000010000000000000001 /* Project object */;
+}

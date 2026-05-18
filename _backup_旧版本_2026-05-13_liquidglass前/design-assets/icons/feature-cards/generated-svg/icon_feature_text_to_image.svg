@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="72" x2="440" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B35"/>
+      <stop offset="1" stop-color="#FF885C"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="140" y1="116" x2="360" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="56" y="56" width="400" height="400" rx="104" fill="url(#bg)"/>
+  <circle cx="356" cy="162" r="94" fill="url(#glow)"/>
+  <g stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="144" y="172" width="188" height="136" rx="34"/>
+    <path d="M182 210H194"/>
+    <path d="M282 210H294"/>
+    <path d="M184 270H218L236 224L254 270H288"/>
+    <path d="M222 248H250"/>
+    <path d="M360 212L372 224"/>
+    <path d="M360 248L372 236"/>
+    <path d="M116 132V152"/>
+    <path d="M106 142H126"/>
+    <path d="M140 114V126"/>
+    <path d="M134 120H146"/>
+    <path d="M376 152V164"/>
+    <path d="M370 158H382"/>
+  </g>
+</svg>

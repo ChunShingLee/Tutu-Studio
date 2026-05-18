@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "network": {
+      "allowedHosts": [
+        "figure.jiangsuocean.cn"
+      ]
+    }
+  }
+}

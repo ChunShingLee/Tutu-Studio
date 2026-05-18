@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - region "Notifications alt+T"
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - img "Tabbit" [ref=e5]
+        - generic [ref=e6]: Tabbit
+        - generic [ref=e7]: beta
+      - button "下载" [ref=e8] [cursor=pointer]
+    - heading "iOS 26 Official Development Guidelines" [level=1] [ref=e11]
+    - main [ref=e12]:
+      - generic [ref=e16]:
+        - generic [ref=e19]:
+          - paragraph [ref=e29]: IOS 26官方开发规范
+          - button [ref=e31] [cursor=pointer]:
+            - img
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - generic [ref=e36] [cursor=pointer]:
+                - generic [ref=e37]: 已完成网页搜索
+                - img [ref=e38]
+              - generic [ref=e42]:
+                - generic [ref=e45]:
+                  - img [ref=e46]
+                  - generic [ref=e49]: iOS 26 official developer guidelines Human Interface Guidelines developer documentation
+                - generic [ref=e50]:
+                  - generic [ref=e53] [cursor=pointer]: iOS & iPadOS 26 Release Notes | Apple Developer Documentation
+                  - generic [ref=e56] [cursor=pointer]: A Developer's Guide to iOS 26's Liquid Glass Style | by Hui Wang
+                  - generic [ref=e59] [cursor=pointer]: "iOS 26 Design Guidelines: Illustrated Patterns (+ free templates)"
+                  - generic [ref=e62] [cursor=pointer]: "iOS 26 Design Guidelines: Illustrated Patterns (+ free templates)"
+                  - generic [ref=e65] [cursor=pointer]: iOS 26 SDK Is Now Mandatory — Here Is What Actually Changes for ...
+            - generic [ref=e66]:
+              - generic [ref=e67] [cursor=pointer]:
+                - generic [ref=e68]: 已完成网页搜索
+                - img [ref=e69]
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - generic [ref=e76]:
+                    - img [ref=e77]
+                    - generic [ref=e80]: site:developer.apple.com/design/human-interface-guidelines iOS 26 Liquid Glass official
+                  - generic [ref=e82]:
+                    - img [ref=e83]
+                    - generic [ref=e86]: Apple Developer iOS 26 design Liquid Glass Human Interface Guidelines official
+                  - generic [ref=e88]:
+                    - img [ref=e89]
+                    - generic [ref=e92]: Apple Developer iOS 26 documentation official guidelines
+                - generic [ref=e93]:
+                  - generic [ref=e96] [cursor=pointer]: Layout | Apple Developer Documentation
+                  - generic [ref=e99] [cursor=pointer]: Materials | Apple Developer Documentation
+                  - generic [ref=e102] [cursor=pointer]: Color | Apple Developer Documentation
+                  - generic [ref=e105] [cursor=pointer]: Tab bars | Apple Developer Documentation
+                  - generic [ref=e108] [cursor=pointer]: Dark Mode | Apple Developer Documentation
+                  - generic [ref=e111] [cursor=pointer]: "iOS 26 Liquid Glass: Comprehensive Swift/SwiftUI Reference - GitHub"
+                  - generic [ref=e114] [cursor=pointer]: "iOS 26 Liquid Glass: Comprehensive Reference | Medium"
+                  - generic [ref=e117] [cursor=pointer]: "Liquid Glass: Redefining design through Hierarchy, Harmony and Consistency"
+                  - generic [ref=e120] [cursor=pointer]: Liquid Glass | Apple Developer Documentation
+                  - generic [ref=e123] [cursor=pointer]: Discover how apps are using the new design and Liquid Glass - Design - Apple Developer
+                  - generic [ref=e126] [cursor=pointer]: iOS & iPadOS 26 Release Notes | Apple Developer Documentation
+                  - generic [ref=e129] [cursor=pointer]: iOS & iPadOS 26.5 RC Release Notes | Apple Developer Documentation
+                  - generic [ref=e132] [cursor=pointer]: What's new in iOS 26
+                  - generic [ref=e135] [cursor=pointer]: A Developer's Guide to iOS 26's Liquid Glass Style | by Hui Wang
+                  - generic [ref=e138] [cursor=pointer]: iOS - Apple Developer
+            - generic [ref=e141]:
+              - heading "iOS 26 的“官方开发规范”主要看 Apple Developer 的 Human Interface Guidelines、iOS 26 Release Notes、Liquid Glass 文档和 iOS 26 新功能页；没有一个单独叫“iOS 26 官方开发规范”的总文档。" [level=3] [ref=e142]:
+                - strong [ref=e143]: iOS 26 的“官方开发规范”主要看 Apple Developer 的 Human Interface Guidelines、iOS 26 Release Notes、Liquid Glass 文档和 iOS 26 新功能页；没有一个单独叫“iOS 26 官方开发规范”的总文档。
+              - paragraph [ref=e144]: 你可以从下面这些官方入口开始：
+              - heading "官方核心文档入口" [level=3] [ref=e145]:
+                - strong [ref=e146]: 官方核心文档入口
+              - paragraph [ref=e147]:
+                - strong [ref=e148]: 1. iOS 26 新功能总览
+                - text: 这是官方面向开发者的 iOS 26 入口，介绍 iOS 26 的关键新技术、设计变化、Xcode 26 beta、示例代码、Release Notes 等资源。
+                - link "iOS 26 What’s New" [ref=e150] [cursor=pointer]:
+                  - /url: https://developer.apple.com/ios/whats-new/
+                  - generic [ref=e151]: iOS 26 What’s New
+              - paragraph [ref=e152]:
+                - strong [ref=e153]: 2. iOS & iPadOS 26 Release Notes
+                - text: 这是开发适配时最重要的版本说明，包含 API 变更、新功能、已修复问题、已知问题、框架更新等，适合工程师逐项排查兼容性。
+                - link "iOS & iPadOS 26 Release Notes" [ref=e155] [cursor=pointer]:
+                  - /url: https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-26-release-notes
+                  - generic [ref=e156]: iOS & iPadOS 26 Release Notes
+              - paragraph [ref=e157]:
+                - strong [ref=e158]: 3. Human Interface Guidelines：Layout
+                - text: iOS 26 设计适配重点之一是布局与视觉层级，官方 HIG 的 Layout 页面已加入 Liquid Glass 相关指导，例如让内容保持焦点、让导航和控制元素浮于内容之上，并通过系统材料区分控件与内容。
+                - link "Apple Developer" [ref=e160] [cursor=pointer]:
+                  - /url: https://developer.apple.com/design/human-interface-guidelines/layout
+                  - generic [ref=e161]: Apple Developer
+              - paragraph [ref=e162]:
+                - strong [ref=e163]: 4. Human Interface Guidelines：Materials / Liquid Glass
+                - text: iOS 26 的核心视觉变化是 Liquid Glass。官方 Materials 页面包含 Liquid Glass、标准材料、平台差异、相关 API 与设计建议。
+                - link "Apple Developer" [ref=e165] [cursor=pointer]:
+                  - /url: https://developer.apple.com/design/human-interface-guidelines/materials
+                  - generic [ref=e166]: Apple Developer
+              - paragraph [ref=e167]:
+                - strong [ref=e168]: 5. Liquid Glass 技术概览
+                - text: 官方 Liquid Glass 文档强调：布局和导航结构应突出最重要内容；App 图标要用简洁、醒目的分层来体现维度；控制和导航中的颜色要谨慎使用；应采用平台标准图标和可预测的操作位置。
+                - link "Apple Developer" [ref=e170] [cursor=pointer]:
+                  - /url: https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass
+                  - generic [ref=e171]: Apple Developer
+              - paragraph [ref=e172]:
+                - strong [ref=e173]: 6. Human Interface Guidelines：Color
+                - text: iOS 26 的颜色规范与 Liquid Glass 关系很大。官方说明中提到，较小元素如工具栏、标签栏会根据底层内容在浅色和深色外观之间自适应，文字和符号默认采用单色方案以保障可读性。
+                - link "Apple Developer" [ref=e175] [cursor=pointer]:
+                  - /url: https://developer.apple.com/design/human-interface-guidelines/color
+                  - generic [ref=e176]: Apple Developer
+              - paragraph [ref=e177]:
+                - strong [ref=e178]: 7. Human Interface Guidelines：Tab Bars
+                - text: iOS 26 中，iOS 的标签栏会浮在屏幕底部内容之上，项目位于 Liquid Glass 背景上，让下方内容隐约透出；官方也提醒避免标签文字颜色与内容背景过于相近。
+                - link "Apple Developer" [ref=e180] [cursor=pointer]:
+                  - /url: https://developer.apple.com/design/human-interface-guidelines/tab-bars
+                  - generic [ref=e181]: Apple Developer
+              - heading "开发适配时重点关注什么" [level=3] [ref=e182]:
+                - strong [ref=e183]: 开发适配时重点关注什么
+              - paragraph [ref=e184]:
+                - text: iOS 26 的适配不只是“能不能编译”，而是同时涉及设计、交互、布局、颜色、可访问性和 API 兼容性。官方文档显示，iOS 26 的设计系统重点转向 Liquid Glass、浮层导航、内容优先的视觉层级，以及跨 iOS、iPadOS、macOS 等平台更一致的界面体验。开发时应优先检查导航栏、工具栏、标签栏、弹窗、侧边栏、滚动视图边缘效果、深色模式、动态文字和对比度。
+                - link "Apple Developer" [ref=e186] [cursor=pointer]:
+                  - /url: https://developer.apple.com/design/human-interface-guidelines/materials
+                  - generic [ref=e187]: Apple Developer
+                - link "Apple Developer" [ref=e189] [cursor=pointer]:
+                  - /url: https://developer.apple.com/design/human-interface-guidelines/layout
+                  - generic [ref=e190]: Apple Developer
+              - paragraph [ref=e191]:
+                - text: 从工程角度看，Release Notes 是必须逐项阅读的文档，因为它覆盖 iOS 26 的框架变化、已知问题和修复项。例如 SwiftUI、AuthenticationServices、AVFoundation、ARKit 等框架都可能出现行为变化、修复项或新能力。适配 iOS 26 时，建议先用 iOS 26 SDK / Xcode 26 构建并运行完整回归测试，再针对 UI、交互和系统框架变化逐项修复。
+                - link "Apple Developer Documentation" [ref=e193] [cursor=pointer]:
+                  - /url: https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-26-release-notes
+                  - generic [ref=e194]: Apple Developer Documentation
+              - heading "建议的阅读顺序" [level=3] [ref=e195]:
+                - strong [ref=e196]: 建议的阅读顺序
+              - list [ref=e197]:
+                - listitem [ref=e198]:
+                  - text: 先看
+                  - link "iOS 26 What’s New" [ref=e200] [cursor=pointer]:
+                    - /url: https://developer.apple.com/ios/whats-new/
+                    - generic [ref=e201]: iOS 26 What’s New
+                  - text: ：了解整体变化和新增能力。
+                - listitem [ref=e202]:
+                  - text: 再看
+                  - link "iOS & iPadOS 26 Release Notes" [ref=e204] [cursor=pointer]:
+                    - /url: https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-26-release-notes
+                    - generic [ref=e205]: iOS & iPadOS 26 Release Notes
+                  - text: ：确认 API、框架、已知问题和兼容性。
+                - listitem [ref=e206]:
+                  - text: 然后看
+                  - link "Liquid Glass" [ref=e208] [cursor=pointer]:
+                    - /url: https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass
+                    - generic [ref=e209]: Liquid Glass
+                  - text: ：理解 iOS 26 的新视觉系统。
+                - listitem [ref=e210]:
+                  - text: 接着看 HIG 的
+                  - link "Layout" [ref=e212] [cursor=pointer]:
+                    - /url: https://developer.apple.com/design/human-interface-guidelines/layout
+                    - generic [ref=e213]: Layout
+                  - text: 、
+                  - link "Materials" [ref=e215] [cursor=pointer]:
+                    - /url: https://developer.apple.com/design/human-interface-guidelines/materials
+                    - generic [ref=e216]: Materials
+                  - text: 、
+                  - link "Color" [ref=e218] [cursor=pointer]:
+                    - /url: https://developer.apple.com/design/human-interface-guidelines/color
+                    - generic [ref=e219]: Color
+                  - text: 、
+                  - link "Tab Bars" [ref=e221] [cursor=pointer]:
+                    - /url: https://developer.apple.com/design/human-interface-guidelines/tab-bars
+                    - generic [ref=e222]: Tab Bars
+                  - text: ：落实到具体界面规范。
+                - listitem [ref=e223]:
+                  - text: 如果要上架，还需要同时遵守 App Store 审核规范：
+                  - link "App Review Guidelines" [ref=e224] [cursor=pointer]:
+                    - /url: https://developer.apple.com/app-store/review/guidelines/
+          - button [ref=e226] [cursor=pointer]:
+            - img
+    - generic:
+      - generic:
+        - button "前往 Tabbit 官网" [ref=e227] [cursor=pointer]
+        - paragraph: 内容由 AI 生成仅供参考
+  - alert [ref=e228]
