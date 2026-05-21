@@ -1,12 +1,54 @@
+# === Environment & Secrets (NEVER commit) ===
+.env
+.env.local
+.env.*.local
+
+# === Dependencies ===
+node_modules/
+
+# === Build output ===
+dist/
+build/
+*.tsbuildinfo
+
+# === macOS ===
 .DS_Store
-.claude/
+.AppleDouble
+.LSOverride
+._*
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
 .codex-artifacts/
+
+# === Logs ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === OS / temp ===
+tmp/
+temp/
+output/
 .learnings/
 .playwright-cli/
-_backup_旧版本_2026-05-13_liquidglass前/
-兔兔视觉创意 app 设计图片.zip
-*.png
+
+# === Design & binary assets (not suitable for git) ===
 design-assets/
-output/
-tmp/
-backend/node_modules/
+*.zip
+
+# === PNGs (design mockups etc — iOS app icons are already tracked) ===
+*.png
+
+# === Backup dirs ===
+_backup_*/
+
+# === Claude / AI agent artifacts ===
+.claude/
